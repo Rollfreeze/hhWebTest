@@ -21,3 +21,179 @@ body {
 header {
     overflow-x: hidden; 
 }
+
+/* Header */
+/* ================================ */
+.header {
+    background-color: #fff;
+}
+
+.header-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header-container > .center-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.center-container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 250px;
+    height: 48px;
+
+    background-image: url("assets/png/logo.png");
+}
+
+.header-nav-links {
+    padding: 0;
+
+    width: 470px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav-links-item {
+    text-decoration: none;
+    list-style-type: none;
+
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.header-nav-links-item:hover {
+
+}
+
+.header-nav-links-item > a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.intro, .intro-red {
+    background-image: url("assets/png/title-background.png");
+    width: 1920px;
+    height: 590px;
+    margin: 0 auto;
+}
+
+
+.right-girl, .left-girl {
+    width: 258px;
+    height: 573px;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    background-image: url("assets/png/right-girl.png");
+    z-index: 15;
+}
+
+.left-girl {
+    background-image: url("assets/png/left-girl.png");
+    left: 0;
+}
+
+.intro-red {
+    opacity: 0.9;
+    background: radial-gradient(#930442, black);
+}
+
+.intro-red > .center-container {
+    height: 590px;
+    position: relative;
+}
+
+.intro-title {
+    /* margin-top: 160px;   */
+    padding-top: 120px;
+    margin: 0 auto;
+
+    max-width: 470px;
+    height: 290px;
+
+}
+
+.welcome, .title-description {
+    font-size: 82px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+}
+
+.sub-title {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+
+    text-align: center;
+
+    margin-top: 44px;
+    margin-bottom: 0px;
+}
+
+.sub-title:last-child {
+    margin-top: 12px;
+    font-size: 36px;
+
+    font-weight: bold;
+}
+
+.welcome {
+    text-align: center;
+}
+
+.welcome::after {
+    content: "";
+    position: absolute;
+    
+    width: 100%;
+
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+
+    left: 0;
+    bottom: 0;
+}
+
+.title-description {
+    font-size: 34px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.intro-btns {
+    display: flex;
+    justify-content: space-between;
+
+    width: 548px;
+    position: absolute;
+
+    left: 238px;
+    bottom: 60px;
+
+    z-index: 22;
+}
+
+.intro-left-btn, .intro-right-btn {
+    border: 2px solid #fff;
+
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 27px 21px;
+
+    text-transform: uppercase;
+}
