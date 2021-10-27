@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,23 +11,27 @@
 
 </head>
 <body>
+
     <header class="header">
         <div class="header-container">
             <div class="center-container">
                 <div class="logo"></div>
                 <nav class="header-nav">
                     <ul class="header-nav-links">
-                        <li class="header-nav-links-item"><a href="#">Каталог</a></li>
-                        <li class="header-nav-links-item"><a href="#">Преимущества</a></li>
+                        <li class="header-nav-links-item"><a href="#catalogs-section">Каталог</a></li>
+                        <li class="header-nav-links-item"><a href="#hits-section">Преимущества</a></li>
                         <li class="header-nav-links-item"><a href="#">Отзывы</a></li>
                         <li class="header-nav-links-item"><a href="#">Как заказать</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
+    </header>
 
-        <div class="intro">
+    <main class="main">
+        <section class="section intro" id="intro-section">
             <div class="intro-red">
+
                 <div class="center-container">
 
                     <div class="intro-title">
@@ -47,11 +51,138 @@
                     <div class="right-girl"></div>
                 </div>
             </div>
-        </div>
-    </header>
+        </section>
 
-    <main class="main">
+        <section class="section hits" id="hits-section">
+            <div class="center-container">
+                <div class="hits-title-container">
+                    <h2 class="hits-title">Хит №1 в мире – модные жеские портупеи 2017</h2>
+                    <p class="hits-sub-title">Как и все кожаные аксессуары, портупея находится сегодня на пике востребованности в мире моды, даря своей обладательнице внимание и уверенность в себе.</p>
+                    <p class="hits-sub-title">Многообразие видов портупей – это как Характер каждой девушки: от портупеи из тонких ремешков для романтичных и женственных натур, до сложных сплетений из средних и широких - для дерзких и раскрепощенных.</p>
+                </div>
+            </div>
 
+            <div class="pics-container">
+                <div class="edge-pic"></div>
+                <div class="m1">
+                    <img src="assets/png/m1.png" alt="m1">
+                </div>
+                <div class="m2">
+                    <img src="assets/png/m2.png" alt="m2">
+                </div>
+                <div class="m3">
+                    <img src="assets/png/m3.png" alt="m3">
+                </div>
+                <div class="m4">
+                    <img src="assets/png/m4.png" alt="m4">
+                </div>
+                <div class="m5">
+                    <img src="assets/png/m5.png" alt="m5">
+                </div>
+                <div class="edge-pic"></div>
+            </div>
+        </section>
+
+        <section class="section sizes" id="sizes-section">
+            <h2 class="hits-title">Таблица размеров</h2>
+
+            <table class="size-table">
+                <tr class="gray-row" id="gray-row-f">
+                    <td class="col">Международный</td>
+                    <td class="col">XS</td>
+                    <td class="col">S</td>
+                    <td class="col">M</td>
+                    <td class="col">L</td>
+                    <td class="col">XL</td>
+                    <td class="col">XXL</td>
+                </tr>
+
+                <tr class="white-row" id="white-row-f">
+                    <td class="col">Российский</td>
+                    <td class="col">40</td>
+                    <td class="col">42</td>
+                    <td class="col">44/46</td>
+                    <td class="col">48/50</td>
+                    <td class="col">52/54</td>
+                    <td class="col">56</td>
+                </tr>
+                
+                <tr class="gray-row">
+                    <td class="col">Бедра (см)</td>
+                    <td class="col">84-92</td>
+                    <td class="col">92-95</td>
+                    <td class="col">96-101</td>
+                    <td class="col">102-108</td>
+                    <td class="col">109-116</td>
+                    <td class="col">117-121</td>
+                </tr>
+
+                <tr class="white-row">
+                    <td class="col">Талия (см)</td>
+                    <td class="col">60-65</td>
+                    <td class="col">66-69</td>
+                    <td class="col">70-77</td>
+                    <td class="col">78-85</td>
+                    <td class="col">86-95</td>
+                    <td class="col">96-102</td>
+                </tr>
+
+                <tr class="gray-row">
+                    <td class="col">Грудь (см)</td>
+                    <td class="col">74-80</td>
+                    <td class="col">82-85</td>
+                    <td class="col">86-93</td>
+                    <td class="col">94-102</td>
+                    <td class="col">103-113</td>
+                    <td class="col">114-119</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- <section class="section catalogs" id="catalogs-section">
+            <h2 class="hits-title">Каталог</h2>
+            <div class="catalog-btns">
+                <button class="catalog-left-btn">павседневные портупеи</button>
+                <button class="catalog-right-btn">эротичесские портупеи</button>
+            </div>
+
+            <div class="center-container">
+                <div class="card-row">
+                    <div class="card-row-item">
+                        <div class="img-container">
+                            <div class="discount-container"></div>
+                        </div>
+                        <h3 class="card-title">Портупея “Пеппи”</h3>
+                        
+                        <div class="size-options">
+                            <button class="size-option-item">XS</button>
+                            <button class="size-option-item">S</button>
+                            <button class="size-option-item">M</button>
+                            <button class="size-option-item">L</button>
+                            <button class="size-option-item">XL</button>
+                            <button class="size-option-item">XXL</button>
+                        </div>
+
+                        <div class="color-options">
+                            <button class="color-item"></button>
+                            <button class="color-item"></button>
+                        </div>
+
+                        <div class="price-row">
+                            <p class="old-price">4990 р.</p>
+                            <p class="current-price">2990 р.</p>
+                        </div>
+
+                        <button class="order-btn">заказать</button>
+                    </div>
+                </div>
+            </div>
+
+        </section> -->
+
+        <section class="section order" id="order-section">
+            
+        </section>
     </main>
 
     <footer class="footer">
