@@ -71,7 +71,11 @@ header {
 .header-nav-links-item > a {
     text-decoration: none;
     color: black;
+    transition: 0.5s linear;
+}
 
+.header-nav-links-item > a:hover {
+    color: #b4014e;
 }
 
 .section {
@@ -362,15 +366,25 @@ header {
     outline: none;
 
     cursor: pointer;
+    transition: 0.5s linear;
 }
 
 .catalog-left-btn {
     background-color: #ba0152;
     color:white;
 }
+
+.catalog-left-btn:hover {
+    background-color: #ba0152ad;
+}
+
 .catalog-right-btn {
     background-color: #f3f3f3;
     color:black;
+}
+
+.catalog-right-btn:hover {
+    background-color: #b9b9b9a8;
 }
 
 .card-row {
@@ -546,9 +560,15 @@ header {
     font-size: 18px;
 
     cursor: pointer;
+
+    transition: 0.5s linear;
 }
 
-.order {
+.order-btn:hover {
+    background-image: linear-gradient(180deg, #55e2e9, #4a75e6);
+}
+
+.footer {
     background-color: #f7f2f4;
 }
 
@@ -582,13 +602,27 @@ header {
 
 .part-logo {
     position: absolute;
-    background-image: url("assets/png/part-1.png");
-
     width: 51px;
     height: 50px;
 
     top: 32%;
     left: 32%;
+}
+
+.l1 {
+    background-image: url("assets/png/part-1.png");
+}
+
+.l2 {
+    background-image: url("assets/png/part-2.png");
+}
+
+.l3 {
+    background-image: url("assets/png/part-3.png");
+}
+
+.l4 {
+    background-image: url("assets/png/part-4.png");
 }
 
 .ellipse-container {
@@ -608,16 +642,17 @@ header {
 
     /* margin-top: 56px; */
     margin: 0;
+    margin-bottom: 120px;
 
-    max-width: 195px;
+    max-width: 220px;
 }
 
 .doted-line {
     position: absolute;
     background-image: url("assets/png/doted-line-img.png");
     height: 1px;
-    width: 740px;
+    width: 730px;
 
-    bottom: 90px;
-    left: 102px;
+    bottom: 188px;
+    left: 105px;
 }
