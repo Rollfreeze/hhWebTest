@@ -401,8 +401,8 @@ header {
 
 .card-row-item {
     position: relative;
-
     border: 1px solid #dbdbdf;
+    margin-bottom: 20px;
 }
 
 .img-container {
@@ -759,6 +759,10 @@ header {
         bottom: 0;
     }
 
+    .sizes > .center-container > .hits-title::after {
+        bottom: 15px;
+    }
+
     .m1, .m2, .m3, .m4, .m5 {
         max-width: 221px;
         width: 100%;
@@ -779,7 +783,9 @@ header {
         padding: 30px 15px;
         width: 580px;
 
-        margin-top: 14px;
+        /* margin-top: 14px; */
+        margin: 0 auto;
+        word-break: break-word;
     }
 
     .catalog-btns {
@@ -792,5 +798,35 @@ header {
 
     .img-container {
         width: 280px;
+    }
+
+    .col {
+        padding-right: 0;
+    }
+
+    .sizes > .center-container > .hits-title {
+        padding-bottom: 32px;
+    }
+
+    .part-description {
+        font-size: 14px;
+        margin-top: 16px;
+    }
+
+    .order-parts-container {
+        flex-wrap: wrap;
+        max-width: 500px;
+    }
+
+    .ellipse-container {
+        display: none;
+    }
+
+    .doted-line {
+        display: none;
+    }
+
+    .order-part-item {
+        height: 210px;
     }
 }
